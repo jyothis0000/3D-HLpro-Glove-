@@ -1,0 +1,427 @@
+body {
+  font-family: Arial;
+  margin: 0px;
+  --progress-bar-color: transparent;
+}
+model-viewer {
+  width: 100%;
+  height: 81svh;
+}
+
+/* Style the tab */
+.glove-back-btn button {
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 14px;
+  margin: 10px 0px 0px 47px;
+  background-color: #333;
+  border-radius: 10px;
+  color: white;
+}
+
+.glove-back-btn button a {
+  color: white;
+  text-decoration: none;
+}
+
+.tab {
+  overflow: hidden;
+  display: flex;
+  gap: 56px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 37px;
+  cursor: pointer;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 19px;
+  /* padding: 14px 16px; */
+  transition: 0.3s;
+  margin-top: 37px;
+  background-color: transparent;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  text-decoration: underline;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+}
+
+/* Show the active tab content */
+.tabcontent.active {
+  display: block;
+}
+
+/* custom */
+
+.glove-custom {
+  display: grid;
+  grid-template-columns: 64% 36%;
+}
+
+.custom-section {
+  background: linear-gradient(0deg, #e7e8ea 0%, #f3f3f3 50%);
+  padding: 37px;
+}
+
+.tablinks {
+  color: #333;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.custom-search {
+  padding: 10px;
+  border-radius: 10px;
+  background: #333;
+  color: white;
+  border: 1px solid transparent;
+  width: 75%;
+  height: 19px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.search-section {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-save {
+  width: 10%;
+  height: 38px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-save img {
+  width: 40%;
+}
+
+.custom-search img {
+  width: 6%;
+}
+
+.tablabel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+/* .tablabel:hover{
+    text-decoration: underline;
+} */
+
+.tablabel.active {
+  border-bottom: 3px solid black;
+  padding-bottom: 1px;
+}
+
+.active-btn {
+  background-color: black;
+  color: white;
+}
+
+.search-input {
+  width: 310px;
+  height: 23px;
+  border-radius: 7px;
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: end;
+  margin-top: -3px;
+  gap: 20px;
+}
+
+.navigation-buttons button {
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+.canvas-section {
+  height: 80svh;
+  width: 100%;
+}
+
+.model-cart-btn button {
+  width: 290px;
+  height: 52px;
+  border-radius: 10px;
+  background: #333;
+  color: white;
+  margin: 0px 0px 0px 55px;
+}
+
+.model-cart-btn h4 {
+  margin: 0px 0px 0px 55px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.custom-section {
+  overflow-x: auto;
+}
+
+.model-section {
+  position: static;
+  overflow: hidden;
+}
+
+.glove-custom {
+  height: 100vh;
+}
+
+.tablabel img {
+  width: 19px;
+}
+
+.custom-save {
+  transition: transform 0.2s ease;
+}
+
+.custom-save:hover {
+  transform: scale(1.1);
+}
+
+.config-single-btn button {
+  transition: transform 0.2s ease;
+}
+
+.config-single-btn button:hover {
+  transform: scale(1.1);
+}
+
+.details-btn button {
+  transition: transform 0.2s ease;
+}
+
+.details-btn button:hover {
+  transform: scale(1.1);
+}
+
+.navigation-buttons button {
+  transition: transform 0.2s ease;
+}
+
+.navigation-buttons button:hover {
+  transform: scale(1.1);
+}
+
+.tablabel span {
+  transition: transform 0.2s ease;
+}
+
+.tablabel span:hover {
+  transform: scale(1.1);
+}
+
+.model-cart-btn button {
+  transition: transform 0.2s ease;
+}
+
+.model-cart-btn button:hover {
+  transform: scale(1.1);
+}
+
+.model-cart-btn button {
+  margin: 9px 0px 0px 55px;
+}
+.model-cart-btn h4 {
+  margin: 32px 0px 0px 55px;
+}
+
+.glove-back-btn button {
+  transition: transform 0.2s ease;
+}
+
+.glove-back-btn button:hover {
+  transform: scale(1.1);
+}
+
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 27%;
+}
+
+@media (max-width: 645px) {
+  .preloader {
+    margin-top: 60%;
+  }
+
+  .glove-custom {
+    display: block;
+  }
+  .model-cart-btn button {
+    margin: 0px;
+  }
+  .custom-search {
+    width: 195px;
+  }
+  .custom-search img {
+    width: 10%;
+  }
+  .model-cart-btn {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 35px;
+    gap: 20px;
+  }
+  .model-cart-btn h4 {
+    margin: 0px 241px 0px 0px;
+    text-align: start;
+  }
+  .custom-section {
+    padding: 20px;
+  }
+  .tab {
+    display: grid !important;
+    grid-template-columns: 38% 33% 33% !important;
+    overflow: hidden;
+    display: flex;
+    gap: 1px;
+  }
+  .configure-btn {
+    display: grid;
+    grid-template-columns: 50% 50% !important;
+  }
+  .tabcontent.active {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .navigation-buttons {
+    margin-top: 21px;
+    margin-bottom: 7px;
+  }
+  .glove-back-btn button {
+    padding: 10px;
+    font-size: 14px;
+    margin: 10px 0px 0px 14px;
+  }
+}
+
+@media (min-width: 624px) and (max-width: 762px) {
+  .custom-section {
+    margin-bottom: -193%;
+  }
+  .glove-custom {
+    display: block;
+  }
+}
+
+@media (min-width: 650px) and (max-width: 768px) {
+  .glove-custom {
+    display: flex;
+    flex-direction: column;
+  }
+  .model-cart-btn button {
+    width: 290px;
+    height: 52px;
+    border-radius: 10px;
+    background: #333;
+    color: white;
+    margin: 0px 0px 37px 55px;
+  }
+}
+
+@media (min-width: 631px) and (max-width: 910px) {
+  .custom-search {
+    padding: 10px;
+    border-radius: 10px;
+    background: #333;
+    color: white;
+    border: 1px solid transparent;
+    width: 51%;
+  }
+}
+
+@media (min-width: 874px) and (max-width: 927px) {
+  .custom-search {
+    padding: 10px;
+    border-radius: 10px;
+    background: #333;
+    color: white;
+    border: 1px solid transparent;
+    width: 42%;
+  }
+}
+
+@media (min-width: 765px) and (max-width: 969px) {
+  .glove-custom {
+    display: block;
+  }
+}
+
+@media (min-width: 922px) and (max-width: 1024px) {
+  .glove-custom {
+    display: grid;
+    grid-template-columns: 53% 47%;
+  }
+}
+
+@media (min-width: 986px) and (max-width: 1328px) {
+  .tab {
+    gap: 20px;
+  }
+}
+
+@media (min-width: 951px) and (max-width: 968px) {
+  .tab {
+    overflow: hidden;
+    display: flex;
+    gap: 31px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .search-input {
+    width: 740px;
+    height: 31px;
+    border-radius: 7px;
+  }
+  .custom-search {
+    height: 31px;
+  }
+  .custom-save {
+    width: 10%;
+    height: 52px;
+  }
+  .glove-back-btn button {
+    padding: 16px;
+    margin: 16px 0px 0px 59px;
+  }
+}

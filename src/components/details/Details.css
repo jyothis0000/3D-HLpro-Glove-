@@ -1,0 +1,128 @@
+.details-sec{
+border: 1px solid black;
+border-radius: 10px;
+margin-top: 30px;
+margin-bottom: 53px;
+}
+
+.detail-inner{
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.details-btn{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.details-btn button{
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.detail-inner button{
+    padding: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.details-logo-section{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.details-input{
+    border: none;
+    border-bottom: 0.5px solid #333;
+    padding: 5px;
+    height: 35px;
+    width: 357px;
+    font-size: 15px;
+    background-color: #F3F3F3;
+}
+
+.details-flag-state{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.details-flag-country{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
+.detail-inner button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.detail-inner button {
+    transition: transform 0.2s ease;
+}
+
+.detail-inner button:hover {
+    transform: scale(1.1);
+}
+
+.details-main-btn{
+    width: 84%;
+}
+
+@media(max-width:645px){
+    .details-input {
+        width: 183px;
+    }
+
+.detail-wrapper{
+    width: 100%;
+}
+.detail-inner {
+    margin-top: 24px;
+    display: flow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.details-logo-section {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 4px;
+}
+.detail-inner button {
+    padding: 13px;
+}
+
+.details-flag-country{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 4px;
+}
+
+.details-flag-state{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-column-gap: 4px;
+}
+
+}
+
+@media(min-width:1017px) and (max-width:1180px){
+    .details-input{
+        width: 225px;
+    }
+}
+
+
+@media(min-width:917px) and (max-width:1437px){
+    .details-input{
+        width: 225px;
+    }
+}

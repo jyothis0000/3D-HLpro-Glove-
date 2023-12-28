@@ -1,0 +1,41 @@
+   .dropdown-section{
+    margin-top: 32px;
+    border: 1px solid #333333;
+    border-radius: 10px;
+   }
+
+   details{
+    padding: 20px;
+   }
+
+   .dropdown-btn{
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-row-gap: 17px;
+   }
+
+   .color-btn button{
+    padding: 17px;
+    border-radius: 5px;
+    cursor: pointer;
+   }
+
+   summary{
+    cursor: pointer;
+    color: #333;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+   }
+
+   summary::marker{
+    color: transparent;
+   }
+
+   .dropdown-warpper{
+      width: 100%;
+   }
+
+  
