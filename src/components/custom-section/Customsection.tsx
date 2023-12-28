@@ -10,6 +10,7 @@ import Customize from "../customize/Customize";
 import Details from "../details/Details";
 import view from "../../assets/icon/view.png";
 import arrowback from "../../assets/icon/arrow.png";
+import arrowright from "../../assets/icon/arrow-right.png";
 
 // TypeScript declaration for 'model-viewer' attribute
 declare module "react" {
@@ -133,7 +134,8 @@ const Customsection = () => {
               Previous
             </button>
             <button onClick={nextTab} disabled={activeTab === tabs.length - 1}>
-              Next
+              <span>Next</span>
+              <img src={arrowright}></img>
             </button>
           </div>
         </div>

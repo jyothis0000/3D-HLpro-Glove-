@@ -161,7 +161,7 @@ model-viewer {
 .navigation-buttons {
   display: flex;
   justify-content: end;
-  margin-top: -3px;
+  margin-top: 13px;
   gap: 20px;
 }
 
@@ -297,6 +297,11 @@ model-viewer {
 
 .glove-back-btn img {
   width: 100%;
+}
+
+.navigation-buttons img {
+  margin-top: -12px;
+  margin-bottom: -8px;
 }
 
 @media (max-width: 645px) {

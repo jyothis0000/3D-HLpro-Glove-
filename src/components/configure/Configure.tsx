@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "./Configure.css";
+import arrowdown from "../../assets/icon/down-arrow.jpg";
+import arrowup from "../../assets/icon/up-arrow.png";
+
 interface ConfigureProps {}
 
 const Configure: React.FC<ConfigureProps> = () => {
@@ -113,11 +116,15 @@ const Configure: React.FC<ConfigureProps> = () => {
         </div>
         {visibleButtons < webbingOptions.length ? (
           <div className="config-view-more">
-            <a onClick={handleViewMoreClick}>View More</a>
+            <a onClick={handleViewMoreClick}>
+              View More <img src={arrowdown}></img>
+            </a>
           </div>
         ) : (
           <div className="config-view-less">
-            <a onClick={handleViewLessClick}>View Less</a>
+            <a onClick={handleViewLessClick}>
+              View Less<img src={arrowup}></img>
+            </a>
           </div>
         )}
       </div>

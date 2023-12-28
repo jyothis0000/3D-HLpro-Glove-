@@ -49,6 +49,10 @@
   transform: scale(1.1);
 }
 
+.config-view-less img {
+  width: 15%;
+}
+
 @media (max-width: 645px) {
   .configure-btn {
     gap: 12px;
