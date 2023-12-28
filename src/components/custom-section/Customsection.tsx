@@ -62,6 +62,10 @@ const Customsection = () => {
     <div className="preloader"> 3D Model Loading...</div>
   );
 
+  const showPreviousButton = () => {
+    return activeTab === 1 || activeTab === 2;
+  };
+
   return (
     <div>
       <div className="glove-custom">
@@ -130,7 +134,7 @@ const Customsection = () => {
             <Details />
           </div>
 
-          <div className="navigation-buttons">
+          {/* <div className="navigation-buttons">
             <button onClick={prevTab} disabled={activeTab === 0}>
               <img src={arrowleft}></img>
               <span>Previous</span>
@@ -138,6 +142,18 @@ const Customsection = () => {
             <button onClick={nextTab} disabled={activeTab === tabs.length - 1}>
               <span>Next</span>
               <img src={arrowright}></img>
+            </button>
+          </div> */}
+          <div className="navigation-buttons">
+            {showPreviousButton() && (
+              <button onClick={prevTab} disabled={activeTab === 0}>
+                <img src={arrowleft} alt="Previous" />
+                <span>Previous</span>
+              </button>
+            )}
+            <button onClick={nextTab} disabled={activeTab === tabs.length - 1}>
+              <span>Next</span>
+              <img src={arrowright} alt="Next" />
             </button>
           </div>
         </div>
