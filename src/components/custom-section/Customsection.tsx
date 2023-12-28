@@ -1,13 +1,15 @@
 // Customsection.tsx
 import React, { useEffect, useState } from "react";
 import "./Customsection.css";
-import save from "../../assets/icon/save.png";
+import save from "../../assets/icon/save.jpg";
 import search from "../../assets/icon/search.png";
 import radioUnchecked from "../../assets/icon/untick.png";
 import radioChecked from "../../assets/icon/tick.png";
 import Configure from "../configure/Configure";
 import Customize from "../customize/Customize";
 import Details from "../details/Details";
+import view from "../../assets/icon/view.png";
+import arrowback from "../../assets/icon/arrow.png";
 
 // TypeScript declaration for 'model-viewer' attribute
 declare module "react" {
@@ -65,14 +67,21 @@ const Customsection = () => {
           <div className="canvas-section">
             <div className="glove-back-btn">
               <button>
-                <a href="">Back</a>
+                <a href="">
+                  <img src={arrowback}></img>
+                </a>
               </button>
             </div>
             {modelViewerElement}
           </div>
           <div className="model-cart-btn">
-            <h4>$985</h4>
-            <button>Add to cart</button>
+            <div className="cart-btn-glove">
+              <h4>$985</h4>
+              <button>Add to cart</button>
+            </div>
+            <div className="view-icon">
+              <img src={view} alt="" />
+            </div>
           </div>
         </div>
         <div className="custom-section">

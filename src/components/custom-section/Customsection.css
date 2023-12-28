@@ -11,8 +11,8 @@ model-viewer {
 /* Style the tab */
 .glove-back-btn button {
   border: 1px solid black;
-  padding: 10px;
-  font-size: 14px;
+  padding: 7px;
+  font-size: 0px;
   margin: 10px 0px 0px 47px;
   background-color: #333;
   border-radius: 10px;
@@ -27,7 +27,7 @@ model-viewer {
 .tab {
   overflow: hidden;
   display: flex;
-  gap: 56px;
+  gap: 2px;
   justify-content: center;
   align-items: center;
   margin-top: 37px;
@@ -129,6 +129,9 @@ model-viewer {
   justify-content: center;
   align-items: center;
   gap: 4px;
+  border-bottom: 2px solid #cacaca;
+  width: 100%;
+  padding-bottom: 13px;
 }
 
 /* .tablabel:hover{
@@ -136,8 +139,8 @@ model-viewer {
 } */
 
 .tablabel.active {
-  border-bottom: 3px solid black;
-  padding-bottom: 1px;
+  border-bottom: 2px solid #1e7a1c;
+  /* padding-bottom: 1px; */
 }
 
 .active-btn {
@@ -215,13 +218,13 @@ model-viewer {
   transform: scale(1.1);
 }
 
-.config-single-btn button {
+/* .config-single-btn button {
   transition: transform 0.2s ease;
 }
 
 .config-single-btn button:hover {
   transform: scale(1.1);
-}
+} */
 
 .details-btn button {
   transition: transform 0.2s ease;
@@ -239,13 +242,13 @@ model-viewer {
   transform: scale(1.1);
 }
 
-.tablabel span {
+/* .tablabel span {
   transition: transform 0.2s ease;
 }
 
 .tablabel span:hover {
   transform: scale(1.1);
-}
+} */
 
 .model-cart-btn button {
   transition: transform 0.2s ease;
@@ -277,7 +280,29 @@ model-viewer {
   margin-top: 27%;
 }
 
+.model-cart-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart-btn-glove button {
+  cursor: pointer;
+}
+
+.view-icon {
+  margin-top: 75px;
+  padding-right: 65px;
+  cursor: pointer;
+}
+
+.glove-back-btn img {
+  width: 100%;
+}
+
 @media (max-width: 645px) {
+  .custom-save {
+    width: 15%;
+  }
   .preloader {
     margin-top: 60%;
   }

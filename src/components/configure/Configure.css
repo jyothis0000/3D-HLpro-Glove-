@@ -1,83 +1,79 @@
-.configure-section h2{
-    margin-bottom: 15px;
-    margin-top: 25px;
-    font-size: 20px;
-    font-weight: 400;
+.configure-section h2 {
+  margin-bottom: 15px;
+  margin-top: 25px;
+  font-size: 20px;
+  font-weight: 400;
 }
 
-.configure-btn{
-    display: grid;
-    grid-template-columns: 33% 33% 33%;
-    grid-row-gap: 20px;
+.configure-btn {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-row-gap: 20px;
 }
 
-.config-single-btn button{
-    width: 90%;
-height: 50px;
-border-radius: 10px;
-cursor: pointer;
+.config-single-btn button {
+  width: 90%;
+  height: 50px;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
-.config-view-more{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    font-size: 14px;
-    cursor: pointer;
-    margin-top: 24px;
+.config-view-more {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 24px;
 }
 
-.config-view-less{
-    display: flex;
-    justify-content: end;
-    align-items: center;
-    font-size: 14px;
-    cursor: pointer;
+.config-view-less {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  font-size: 14px;
+  cursor: pointer;
 }
 
 .color-btn button {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-
-.color-btn button{
-    transition: transform 0.2s ease;
+.color-btn button {
+  transition: transform 0.2s ease;
 }
 
-.color-btn button:hover{
-    transform: scale(1.1);
+.color-btn button:hover {
+  transform: scale(1.1);
 }
 
-
-@media(max-width:645px){
-    .configure-btn {
-        gap: 12px;
-    }
-    .color-btn button {
-        padding: 13px !important;
-}
-.dropdown-btn {
+@media (max-width: 645px) {
+  .configure-btn {
+    gap: 12px;
+  }
+  .color-btn button {
+    padding: 13px !important;
+  }
+  .dropdown-btn {
     grid-column-gap: 4px;
     grid-template-columns: 33% 33% 33% !important;
-}
-.color-btn{
+  }
+  .color-btn {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
 }
 
-}
-
-@media(min-width:650px) and (max-width:768px){
-    .configure-btn{
-        gap: 13px;
-    }
-    .configure-btn {
-        display: grid;
-        grid-template-columns: 25% 25% 25% 25%;
-        grid-row-gap: 20px;
-    }
-
+@media (min-width: 650px) and (max-width: 768px) {
+  .configure-btn {
+    gap: 13px;
+  }
+  .configure-btn {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-row-gap: 20px;
+  }
 }
