@@ -11,6 +11,7 @@ import Details from "../details/Details";
 import view from "../../assets/icon/view.png";
 import arrowback from "../../assets/icon/arrow.png";
 import arrowright from "../../assets/icon/arrow-right.png";
+import arrowleft from "../../assets/icon/arrow-left.png";
 
 // TypeScript declaration for 'model-viewer' attribute
 declare module "react" {
@@ -131,7 +132,8 @@ const Customsection = () => {
 
           <div className="navigation-buttons">
             <button onClick={prevTab} disabled={activeTab === 0}>
-              Previous
+              <img src={arrowleft}></img>
+              <span>Previous</span>
             </button>
             <button onClick={nextTab} disabled={activeTab === tabs.length - 1}>
               <span>Next</span>
