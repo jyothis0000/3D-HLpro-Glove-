@@ -1,5 +1,5 @@
 // Customsection.tsx
-import React, { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import "./Customsection.css";
 import save from "../../assets/icon/save.jpg";
 import search from "../../assets/icon/search.png";
@@ -12,33 +12,34 @@ import view from "../../assets/icon/view.png";
 import arrowback from "../../assets/icon/arrow.png";
 import arrowright from "../../assets/icon/arrow-right.png";
 import arrowleft from "../../assets/icon/arrow-left.png";
+import ThreeDCanvas from "../threed_canvas/ThreeDCanvas";
 
 // TypeScript declaration for 'model-viewer' attribute
-declare module "react" {
-  interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
-    "model-viewer"?: any;
-  }
-}
+// declare module "react" {
+//   interface HTMLAttributes<T> extends AriaAttributes, DOMAttributes<T> {
+//     "model-viewer"?: any;
+//   }
+// }
 
 const Customsection = () => {
   const [activeTab, setActiveTab] = useState<number>(0);
   const tabs = ["Configure", "Customize", "Details"];
-  const [modelLoaded, setModelLoaded] = useState<boolean>(false);
+  // const [modelLoaded, setModelLoaded] = useState<boolean>(false);
 
   // loader //
 
-  useEffect(() => {
-    const fakeModelLoading = setTimeout(() => {
-      setModelLoaded(true);
-    }, 2000);
-    return () => clearTimeout(fakeModelLoading);
-  }, []);
+  // useEffect(() => {
+  //   const fakeModelLoading = setTimeout(() => {
+  //     setModelLoaded(true);
+  //   }, 2000);
+  //   return () => clearTimeout(fakeModelLoading);
+  // }, []);
 
   const openTab = (index: number) => {
     setActiveTab(index);
   };
 
-  // tab- next and previous //
+  //tab- next and previous //
 
   const nextTab = () => {
     setActiveTab((prevTab) => (prevTab + 1) % tabs.length);
@@ -50,17 +51,17 @@ const Customsection = () => {
 
   // model-viewer//
 
-  const modelViewerElement = modelLoaded ? (
-    React.createElement("model-viewer", {
-      src: "model/glove.glb",
-      "shadow-intensity": "0.4",
-      "camera-controls": true,
-      "auto-rotate": true,
-      "disable-tap": true,
-    })
-  ) : (
-    <div className="preloader"> 3D Model Loading...</div>
-  );
+  // const modelViewerElement = modelLoaded ? (
+  //   React.createElement("model-viewer", {
+  //     src: "model/glove.glb",
+  //     "shadow-intensity": "0.4",
+  //     "camera-controls": true,
+  //     "auto-rotate": true,
+  //     "disable-tap": true,
+  //   })
+  // ) : (
+  //   <div className="preloader"> 3D Model Loading...</div>
+  // );
 
   return (
     <div>
@@ -74,7 +75,13 @@ const Customsection = () => {
                 </a>
               </button>
             </div>
-            {modelViewerElement}
+            <div className="glove_canvas">
+              <Suspense fallback={<div style={{ width: "60%" }}></div>}>
+                <ThreeDCanvas />
+              </Suspense>
+            </div>
+
+            {/* {modelViewerElement} */}
           </div>
           <div className="model-cart-btn">
             <div className="cart-btn-glove">
