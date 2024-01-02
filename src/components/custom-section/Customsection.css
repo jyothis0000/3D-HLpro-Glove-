@@ -483,3 +483,17 @@ model-viewer {
     margin: 16px 0px 0px 59px;
   }
 }
+
+.glove_canvas {
+  display: grid;
+  height: 97%;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* @media (max-width: 630px) {
+  .glove_canvas {
+    grid-template-columns: 100%;
+    grid-template-rows: 60% 40%;
+  }
+} */
